@@ -18,3 +18,7 @@ Random fine details about iframes:
 
 Future of iframes:
 There are a few key things iframes do. They separate styles and javascript. By default they also separate domain security, but ideally this should be optional. Anyone scrape a page and load an iframe pointing to their domain serving the scraped page. But you can't really do this AND have the page authenticated. When I say authenticated, I mean if I load twitter.com/devinrhode2, you should be able to click "Follow" and have it work. Right now, there's no way for a site to do this, perhaps for good reasons. However, they can load a public page, where you aren't authenticated on the page.
+
+
+Follow the author: <a href="https://twitter.com/devinrhode2">@DevinRhode2</a>
+And editors: <a href="https://twitter.com/">@YourUserNameHere</a>
