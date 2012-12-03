@@ -1,12 +1,12 @@
 This is super rough and needs editing.
 
-Thanks to a talk from <a href="https://twitter.com/tomdale">Tom Dale</a>, a core author of <a href="http://emberjs.com">Ember.js</a>, my mind has been spinning around update models, from native apps, to my own live extension update system (not finished) html5 offline, and normal web caching.
+Thanks to a talk from <a href="https://twitter.com/tomdale">Tom Dale</a>, a core author of <a href="http://emberjs.com">Ember.js</a>, my mind has been spinning around update models, from native apps, to my own live extension update system (not finished) html5 offline, and normal web caching. <a href="http://www.ustream.tv/recorded/26977615">Watch the talk here.</a>
 
 tl;dr HTML5 offline is a fantastic update model that hits the perfect balance between performance and user experience.
 
 On iOS, app updates are sheparded through Apple. The user has to go and click update to update the app. It requires user intervention, and is not the best developer or user experience in my mind. One positive could be that the user always knows when the app is going to change.
 
-On the (current) web, everything is the latest always. This is great for developers, and we love it. However, anyone truly keen on performance knows another second added to a page load time can drastically affect your business. This is best proved in a talk from Torbit, you should <a href="">watch it on ustream</a>.
+On the (current) web, everything is the latest always. This is great for developers, and we love it. However, anyone truly keen on performance knows another second added to a page load time can drastically affect your business. This is best proved in a talk from Torbit, you should <a href="http://www.ustream.tv/recorded/25213585">watch it on ustream</a>.
 
 Now, I'm going to talk about my design decisions in my own update system I've been designing for some time now for chrome extensions.
 
