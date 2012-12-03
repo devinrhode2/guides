@@ -18,20 +18,34 @@ So, I faced a decision. Do I want to bog down a users browser with a long pollin
 
 So listeners are out the door. We can't have quite live updates. That's just being mean to a person's computer/device.
 
-But we do want Native performance. I'm not going to make  is great because there's no page load. And if you don't believe me go watch the talk from Torbit and Tom Dale. Performance matters. Native is winning because networks are slow and can be flaky. Like Tom, I want the web to win, and we can start by utilizing HTML5 Offline.
+But we do want Native performance. Native is winning against the web because networks are slow and can be flaky. Like Tom, I want the web to win, and we can start by utilizing HTML5 Offline.
 
 I thought really hard on the most efficient but also very prompt update system.
 
-You download the extension, I see there's nothing loaded in localStorage so I fetch the first update. eval and the extension is running. Now, <em>do I sit and have a connection wait for an update?</em> No. When do I check for updates? Well, once my extension runs and I'm done, I should check for an update then. As someone is using it, I could also periodically ping the server to check for updates. If there's an update, I'll download it an it'll be ready next time the user uses the extension. I could display a little notification that an update will take effect next time the user reloads the page, so things don't expectedly change and piss users off, like facebook.
+My current design:
 
-An important note: to get native level quality, I need to have my app ready the second someone wants to interact with it, the only network requests should be getting data, like for a news feed. Page loads suck.
+You download the extension, I see there's nothing loaded in localStorage so I fetch the first update, eval the code and the extension is running. Now, <em>do I sit and have a connection wait for an update?</em> No. When do I check for updates? Well, after my extension runs is a perfect time. As someone is using it, I could also periodically ping the server to check for updates. If there's an update, I'll download it an it'll be ready next time the user uses the extension. It's ok to listen for updates when a user has my app open. I could also display a little notification that an update will take effect next time the user reloads the page, so things don't expectedly change and piss users off, like facebook.
+
+An important note: I want to get native level quality, I need to have my app ready the second someone wants to interact with it, the only network requests should be getting data, like for a news feed. Page loads suck.
 
 Then I realized, this update model IS IDENTICAL TO HTML5 OFFLINE.
 
 Admittedly, there are a few douchbag parts of the appcache.
 
-At this point, I'm going to assume you know how html5 offline works. You can read up on it from Gmail mobile's blog posts here: or from html5rocks.com here: http://www.html5rocks.com/en/tutorials/appcache/beginner/
+At this point, I'm going to assume you know how html5 offline works. You can read up on it from Gmail mobile's blog posts here (search page for 'gmail'): https://github.com/h5bp/html5-boilerplate/wiki/library or from html5rocks.com here: http://www.html5rocks.com/en/tutorials/appcache/beginner/
 
 The appcache updates everything when any byte in the appcache changes. I think this should and will change to when any resource name changes. Modern web apps give their assets a hash in the filename, like main.s683jksd78ds.css. This is important for IE cache busting, but also serves well for the appcache. When this file hash changes in the appcache, the browser should just update that file, and no others.
 
 Guess what? Everything else about html5 offline is much better than you think, it's just different.
+
+<h2>Hurdles for the future of html5 offline</h2>
+
+Framework authors need to get on board with it. Generating the appcache manifest should all be automatic. 
+
+P.S. the appcache allows you to tell the browser try fetching a resource over the network first instead. Dynamic images? I think you'd have something like this in the manifest:
+
+    NETWORK:
+    /images/*
+    *
+
+Dear framework authors and contributors: Let's bring html5 offline to the world and show them how it's done. Who wants to dive in first? 
