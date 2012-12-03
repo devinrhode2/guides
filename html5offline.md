@@ -4,15 +4,15 @@ tl;dr HTML5 offline has a fantastic update model that hits the perfect balance b
 
 On iOS, app updates are shepherded through Apple. The user has to go and click update to update the app. It requires user intervention, and is not the best developer or user experience in my mind. One positive could be that the user always knows when the app is going to change. A huge positive is app performance. Apps launch instantly, they are local for pete's sake. Can't beat that!
 
-On the (current) web, everything is always the latest copy. This is great for developers, and we love it. However, anyone truly keen on performance knows every second added to a page load time can drastically affect your business. This is best proved in a talk from Torbit, you should <a href="http://www.ustream.tv/recorded/25213585">watch it on ustream here.</a>
+On the (current) web, everything is always the latest copy. This is great for developers, and we love it. However, anyone truly keen on performance knows every second added to a page load time can drastically affect your business. This is best proved in a talk from Torbit, you should <a href="http://www.ustream.tv/recorded/25213585">watch it on ustream here.</a> tl;dw: Torbit has collected performance data at a massive scale, with a relation to revenue. This talk is the first time the numbers were released.
 
-Now, I'm going to talk about my design decisions in my own update system I've been designing for some time now for chrome extensions. I'm not going to talk about my motivation to making my own update system, take my lessons in a more generic manner.
+Now, I'm going to talk about the design decisions I've made in my own update system I'm working on for chrome extensions. Yes chrome extensions auto-update with chrome, but sometimes chrome updates break which means your extension won't update either. If you want to update the day after a chrome update was pushed out, you're waiting 6 weeks for the next chrome update. But that's not the focus here.
 
-<h2>Design decisions</h2>
+<h2>My design decisions</h2>
 
-My first design was to hook up a websocket that will update code in localStorage, and then eval that code. You download the extension, the websocket connects, loads code in localStorage, and gracefully executes's it. I have my build process concatenate files into one single file, which I upload to my server, and have an update even sent out. The websocket receiver updates localStorage and everything's updated for the next run.
+My first design was to hook up a websocket that will load code in localStorage, and then eval it. The 'extension' crx is a shell to do this, nothing more. You download the extension, the websocket connects, loads code in localStorage, and gracefully executes's it. I have my build process concatenate files into one single file, which I upload to my server, and have an update even sent out. The websocket receiver updates localStorage and everything's up to date for the next time a user loads my extension.
 
-Then I learned websockets are actually a really terrible technology. Even the hallmark node + websocket framework <a href="http://meteor.com/">Meteor</a> doesn't actually use window.WebSocket, it uses xhr-long polling.
+Then I learned websockets are actually <a href="https://speakerdeck.com/3rdeden/realtimeconf-dot-oct-dot-2012">a really terrible technology</a>. Even the hallmark node + websocket framework <a href="http://meteor.com/">Meteor</a> <a href="https://github.com/meteor/meteor/issues/332">doesn't actually use window.WebSocket</a>, it uses xhr-long polling.
 
 So, I faced a decision. Do I want to bog down a users browser with a long polling connection, or have less than live updates? I thought about it for a long time. Now imagine if many many extensions held some websocket or long polling connection in the background? That would suck! This is why Apple has one listener for updates through it's AppStore. It would be crazy to give each app it's own listener for updates. Talk about a resource hog.
 
