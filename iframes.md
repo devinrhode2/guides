@@ -1,7 +1,3 @@
-Testing:
-<a href="thing.png">thing.png</a><br>
-<a href="/thing.png">/thing.png</a>
-
 # Everything you ever wanted to know about iframes.
 
 I figured it would be worthwhile to write out everything I know about iframes, as I've learned an awful lot.
