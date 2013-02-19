@@ -49,3 +49,10 @@ P.S. the appcache allows you to tell the browser try fetching a resource over th
     *
 
 Dear framework authors and contributors: Let's bring html5 offline to the world and show them how it's done. Who wants to dive in first? 
+
+Update: Another downfall includes having duplicated caches on the client.
+I don't like the idea of having a duplicate cache sucking up space on my machine,
+so another good approach is to use a client side MVC framework like Ember to have all your templates cached.
+You can shrink the main html page down to such a small request, it becomes rather negligible.
+This means you can have an always up-to-date experience, and updates would typically be very lightweight.
+
