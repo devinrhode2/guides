@@ -1,6 +1,6 @@
 Thanks to a talk from <a href="https://twitter.com/tomdale">Tom Dale</a>, a core author of <a href="http://emberjs.com">Ember.js</a>, my mind has been spinning around update models, from native apps, to my own live extension update system (not finished), html5 offline, and normal web caching. <a href="http://www.ustream.tv/recorded/26977615">Watch the talk here, I highly recommend it.</a>
 
-tl;dr HTML5 offline has a fantastic update model that hits the perfect balance between performance considerations and user experience. You should use it <a href="https://twitter.com">TODAY</a>.
+tl;dr HTML5 offline has a fantastic update model that hits the perfect balance between performance considerations and user experience. You should search for an extension or plugin for your framework today and 
 
 On iOS, app updates are shepherded through Apple. The user has to go and click update to update the app. It requires user intervention, and is not the best developer or user experience in my mind. One positive could be that the user always knows when the app is going to change. A huge positive is app performance. Apps launch instantly, they are local for pete's sake. Can't beat that!
 
@@ -49,3 +49,10 @@ P.S. the appcache allows you to tell the browser try fetching a resource over th
     *
 
 Dear framework authors and contributors: Let's bring html5 offline to the world and show them how it's done. Who wants to dive in first? 
+
+Update: Another downfall includes having duplicated caches on the client.
+I don't like the idea of having a duplicate cache sucking up space on my machine,
+so another good approach is to use a client side MVC framework like Ember to have all your templates cached.
+You can shrink the main html page down to such a small request, it becomes rather negligible.
+This means you can have an always up-to-date experience, and updates would typically be very lightweight.
+
