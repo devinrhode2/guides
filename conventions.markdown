@@ -1,4 +1,3 @@
-
 Use Array.prototype.slice instead of [].slice because it doesn't allocate a new array, therefore using less memory.
 
 Assume input is valid, but catch and identify the error when it's not valid.
@@ -18,4 +17,15 @@ Prefer variables instead of passing arguments into an iife (immediately invoked 
   // what does window equal? You have to scroll all the way down..
   //...
 })( this );
+```
+
+
+Commenting format:
+I generally space and capitalize comments on their own line:
+```
+// Comment on it's own line.
+```
+and do no space and no capitalization when at the end of a line:
+```
+if (something === SomeOtherThing) { //small case
 ```
