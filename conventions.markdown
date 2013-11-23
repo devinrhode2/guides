@@ -29,3 +29,6 @@ and do no space and no capitalization when at the end of a line:
 ```
 if (something === SomeOtherThing) { //small case
 ```
+
+
+Also, this: http://benalman.com/news/2012/05/multiple-var-statements-javascript/
