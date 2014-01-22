@@ -1,7 +1,5 @@
 This is a draft. If you're browsing my GitHub and are reading this, please take it with a grain of salt.
 
-I 
-
 Here are my available openings.. based on estimations
 
 In addition to my open source projects, these are area I'd like to work in:
@@ -14,8 +12,7 @@ Drop me at line on gmail@devinrhode2 with answers to the following questions:
 
 1. What is the actual work that you need done? How time-sensitive is it?
 
-2. What is your server stack, client stack, and tooling look like? Do you use Grunt, Backbone, and Rails?
-Then also tell me if you use Closure Compiler or another javascript minifier? Do you use JSHint? Coffeescript?
+2. What is your complete development setup process? Ideally this is already documented and you can just copy-paste and send it to me. What are all your server client and tooling technologies? Grunt, Backbone, Rails, PHP, Closure Compiler, JSHint, Coffeescript?
 
 I do appreciate a higher price for a little more pressure, perhaps $60/hr reflects my desired ratio.
 
