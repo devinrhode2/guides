@@ -3,12 +3,10 @@ Software Developer
 San Francisco, CA
 DevinRhode2 on Github and Twitter
 
-INDEPENDENT & OPEN SOURCE PROJECTS
 
-TextHMU.com (site no longer up), February 2011 – July 2011
+## API’s and Libraries
 
-__API’s and Libraries__ I am familiar with
-
+I'm familiar with:
  * HTML5 Geolocation, localStorage, placeholders, WebSockets, CSS3 transitions, transforms, animations, etc...
  * First mastered JavaScript, and then __jQuery__
  * Bootstrap, Foundation
@@ -17,6 +15,8 @@ __API’s and Libraries__ I am familiar with
  * Ember, Angular, Backbone...
 
 ## HISTORY
+
+expectations
 
 I'm presenting my education, side projects, work and other experiences mixed together here in a story-like fashion in hopes of painting a personal and vivid picture of me. Enjoy!
 
@@ -44,10 +44,11 @@ After I learning how to program fall semester, I started figuring out how to mak
 With inspiration from The Social Network, help from friends, and disappointment that the apparently great foursquare just didn't connect me with my friends in real life, I started a social network called HitMeUp. I wanted to know when my friends were free to hangout and where they were.
 February 2011 – July 2011
 
-  - Vanilla LAMP stack, but we actually used source control
+  - Plain LAMP stack, but we did use source control!
   - Post and get status updates via SMS with Twilio
   - Also created a chrome extension that mixed the elements of HMU directly into Facebook
   - Started building a small team
+TextHMU.com?
 
 I also joined a fraternity spring semester, only because this one specifically didn't pressure you to drink at all. I made great friends and learned what it meant to be a gentleman.
 
@@ -70,7 +71,7 @@ I immediately accepted an offer from Refactr, a local development consulting fir
 
 I was then left to work on Scout all day everyday, and this was my core focus for the next 10 months. I learned javascript, the chrome extension api, iframes, crazy css selectors, and a lot more about frontend development and javascript.
 
-During these 10 months is when I moved to Silicon Valley. I continued doing freelance development for a handful of startups, with each one this time focusing on frontend/javascript development. When I officially launched Scout, June 2012, I was at a cross-roads. I felt sufficiently satisified with my progress on the extension and logically I should blog and stuff to gain traction. I went hunting for a good blog engine, but just couldn't find anything good enough. Following the build it yourself policy, I went searching for a great framework to build the better blog engine on. I dove deeper and deeper into open source and can say it's now one of my true
+During these 10 months is when I moved to Silicon Valley. I continued doing freelance development for a handful of startups, with each one this time focusing on frontend/javascript development, half of them being chrome extensions. When I officially launched Scout, June 2012, I was at a cross-roads. I felt sufficiently satisfied with my progress on the extension and logically I should blog and stuff to gain traction. I went hunting for a good blog engine, but just couldn't find anything good enough. Following the build it yourself policy, I went searching for a great framework to build the better blog engine on. I dove deeper and deeper into open source and can say it's now one of my true loves in life.
 
  * Tweet-bar, Tweet from the omnibar in Chrome! github.com/devinrhode2/tweet-bar
 
@@ -87,11 +88,5 @@ Amobee, JavaScript Developer, Redwood City, March 2013 - August 2013 (4 months)
 
  * Developed ads in a propietary ad xml language, and created development tools for abstracting and re-using chunks of xml.
  * I used EJS initially, it was then agreed upon pure xml isn't powerful enough, and I wrote tool with grunt to compile jade to xml.
-
-
-
-Snap Speed Computer Care, February 2010 - August 2010
-  * Started with a friend of a friend, finished summer strong after he quit
-  * Assisted seniors, greatly influencing my designs
 
 McDonald’s, 1 year
