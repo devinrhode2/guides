@@ -1,14 +1,10 @@
-This is a draft. If you're browsing my GitHub and are reading this, please take it with a grain of salt.
+I really value good up to date documentation, especially with the development setup process.
 
-Here are my available openings.. based on estimations
+I really appreciate knowing what the actual work you need done is. I really value design,  I'm not a
+designer, but if you need design done I can do that too, just need you
+to know it'll take longer
 
-In addition to my open source projects, these are area I'd like to work in:
 
-There may be others. Certainly something directly related to one of these things, or an open source project,
-would be very interesting to me. Please DO NOT tell me how your advertising company is developing it's own ad
-markup language that is like HTML7 dude.
-
-Drop me at line on gmail@devinrhode2 with answers to the following questions:
 
 1. What is the actual work that you need done? How time-sensitive is it?
 
