@@ -17,9 +17,6 @@ INDEPENDENT & OPEN SOURCE PROJECTS
    - Gathered co-founders and built a small team at UMD
    - Created Chrome Extension that added the HMU feed next to “Top News” on Facebook
    - Post and get status updates via SMS with Twilio. Implemented in PHP :/
- * Facebook Chat Fix extension - 1,356 downloads
- * YouTube AdBlock extension - 1,500+ downloads
-
 
 __API’s and Libraries__ I am familiar with
  * HTML5 Geolocation, localStorage, placeholders, WebSockets, CSS3 transitions, transforms, animations, etc...
@@ -34,12 +31,12 @@ __API’s and Libraries__ I am familiar with
 #### Early life:
 
  * In my childhood I was a classic yahoo and a nerd. Sometimes slacker, sometimes A-student.
- * I was in Boy Scouts for 5 years and then Upward Bound for 4, visiting 
+ * I was in Boy Scouts for 5 years and then Upward Bound for 4, visiting
  * 9th grade: Delivered papers everyday for 1 year. Started working hard in school.
  * 10th grade: Moved to better school. McDonald's for 1 year. Purchased laptop and car. Wanted to be a a physicist when I grow up.
 
  * 11th grade: Thanks to a special program in Minnesota, I went to a Community College. I did lots of tutoring. Initially volunteering, and later for pay from the college. I also did extra tutoring on the side. A few months later I started a computer repair service Snap Speed Computer Care. When the iPad was released in 2010, the freedom to make my own apps for a living with no boss motivated me to start teaching myself a bit of C++.
-   - By assiting seniors with their computers, I developed a strong interest in making technology easy to use. 
+   - By assiting seniors with their computers, I developed a strong interest in making technology easy to use.
    - I became very skilled at searching Google and started getting ideas about how to improve the experience.
    - When a peer claimed he knew more about computers than me, I recruited him as my partner. When he later quit, I was somehow even more motivated to do great work.
 
@@ -56,9 +53,15 @@ With inspiration from The Social Network, help from friends, and disappointment 
 
 I also joined a fraternity spring semester, only because this one specifically didn't pressure you to drink at all. I made great friends and learned what it means to be a gentleman. Eventually I tried drinking and found it enjoyable, pushing my comfort zone and making me more confident. (Having a strong fear of alchohol would be mostly harmful for most people in america)
 
+
+ * YouTube AdBlock extension - 1,500+ downloads
+
 Since I was learning more working on HitMeUp and school was getting in the way of this, I had no motivation to finish 3 more years of computer science at this institution.
 
 I was soon introduced to the unpredictability of software when I finished my mothers friends wordpress site for her antique shop. I threw out some estimation but my hours ended up double what I had expected. I think I made about minimum wage on that project, but rightfully so because I had such little experience at this point.
+
+Chrome Extension: Fixed Facebook to show all friends online
+  - My friends started complaining and I started coding - this extension peaked at 1,356 downloads.
 
 I then moved to Minneapolis and worked for a solo founder in an incubator program, but ended up leaving in frustration when he simply wouldn't understand that city and state can be found given a zip code, and that users only need to enter a zip code.
 
@@ -66,7 +69,7 @@ I immediately accepted an offer from Refactr, a local development consulting fir
 
 I was then left to work on Scout all day everyday, and this was my core focus for the next 10 months. I learned javascript, the chrome extension api, iframes, crazy css selectors, and a lot more about frontend development and javascript.
 
-During these 10 months is when I moved to Silicon Valley. I continued doing freelance development for a handful of startups, with each one this time focusing on frontend/javascript development. When I officially launched Scout, June 2012, I was at a cross-roads. I felt sufficiently satisified with my progress on the extension and logically I should blog and stuff to gain traction. I went hunting for a good blog engine, but just couldn't find anything good enough. Following the build it yourself policy, I went searching for a great framework to build the better blog engine on. I dove deeper and deeper into open source and can say it's now one of my true 
+During these 10 months is when I moved to Silicon Valley. I continued doing freelance development for a handful of startups, with each one this time focusing on frontend/javascript development. When I officially launched Scout, June 2012, I was at a cross-roads. I felt sufficiently satisified with my progress on the extension and logically I should blog and stuff to gain traction. I went hunting for a good blog engine, but just couldn't find anything good enough. Following the build it yourself policy, I went searching for a great framework to build the better blog engine on. I dove deeper and deeper into open source and can say it's now one of my true
 
 Amobee, JavaScript Developer, Redwood City, March 2013 - August 2013 (4 months)
   Developed ads in a propietary ad xml language, and created development tools for abstracting and re-using chunks of xml.
